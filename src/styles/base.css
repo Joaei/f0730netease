@@ -1,0 +1,40 @@
+/* 字体 */
+body,ul,li,p,a {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #848f98;
+  font-size: 12px;
+}
+/* 去边框 */
+body, html, h1, h2, h3, h4, h5, h6, ul, ol, li, p, dl, dt, dd, 
+header, menu, section, p, input, td, th, ins {
+  margin: 0 0;
+  padding: 0 0;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+/* 块元素 */
+h1,h2,h3,h4 {
+  display: inline;
+}
+/* 浮动 */
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.line {
+  margin: 0 8px 0 10px;
+  color: #c2c2c2;
+}
