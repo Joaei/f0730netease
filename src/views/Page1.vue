@@ -26,7 +26,7 @@
     </div> 
     <div class="navshow">
       <div class="piclist">
-        <div class="wrap" fl>
+        <div class="wrap fl">
           <el-carousel height="285px">
             <el-carousel-item v-for="item in 4" :key="item">
               <h3>{{ item }}</h3>
@@ -44,21 +44,59 @@
             <div class="sec1hot">
               <div class="hothead">
                 <div class="hotnav">
-                </div>
-                <div class="hotlink">
+                  <a href="/discover/playlist/" class="tit f-ff2 f-tdn">热门推荐</a>
+                  <div class="tab">
+                    <a href="/discover/playlist/?cat=%E5%8D%8E%E8%AF%AD" class="s-fc3">华语</a>
+                    <span class="line">|</span>
+                    <a href="/discover/playlist/?cat=%E6%B5%81%E8%A1%8C" class="s-fc3">流行</a>
+                    <span class="line">|</span>
+                    <a href="/discover/playlist/?cat=%E6%91%87%E6%BB%9A" class="s-fc3">摇滚</a>
+                    <span class="line">|</span>
+                    <a href="/discover/playlist/?cat=%E6%B0%91%E8%B0%A3" class="s-fc3">民谣</a>
+                    <span class="line">|</span>
+                    <a href="/discover/playlist/?cat=%E7%94%B5%E5%AD%90" class="s-fc3">电子</a>
+                  </div>
+                  <span class="more">
+                    <a href="/discover/playlist/" class="s-fc3">更多</a>
+                    <i class="cor s-bg s-bg-6">&nbsp;</i>
+                  </span>
                 </div>
               </div>
               <div class="hotcard">
                 <div class="card">
                   <ul>
-                    <li><div><a href="#"></a></div></li>
-                    <li><div><a href="#"></a></div></li>
-                    <li><div><a href="#"></a></div></li>
-                    <li><div><a href="#"></a></div></li>
-                    <li><div><a href="#"></a></div></li>
-                    <li><div><a href="#"></a></div></li>
-                    <li><div><a href="#"></a></div></li>
-                    <li><div><a href="#"></a></div></li>
+                    <li><div>
+                      <a href="#"><span>sfafa</span></a>
+                      <h4>new music</h4>
+                    </div></li>
+                    <li><div>
+                      <a href="#"><span>sfafa</span></a>
+                      <h4>new music</h4>
+                    </div></li>
+                    <li><div>
+                      <a href="#"><span>sfafa</span></a>
+                      <h4>new music</h4>
+                    </div></li>
+                    <li><div>
+                      <a href="#"><span>sfafa</span></a>
+                      <h4>new music</h4>
+                    </div></li>
+                    <li><div>
+                      <a href="#"><span>sfafa</span></a>
+                      <h4>new music</h4>
+                    </div></li>
+                    <li><div>
+                      <a href="#"><span>sfafa</span></a>
+                      <h4>new music</h4>
+                    </div></li>
+                    <li><div>
+                      <a href="#"><span>sfafa</span></a>
+                      <h4>new music</h4>
+                    </div></li>
+                    <li><div>
+                      <a href="#"><span>sfafa</span></a>
+                      <h4>new music</h4>
+                    </div></li>
                   </ul>
                 </div>
               </div>
@@ -163,8 +201,8 @@ export default {};
   .leftcontent {
     margin: 20px 16px 40px;
     width: 700px;
-    height: 300px;
-    background-color: coral;
+    height: 100%;
+    background-color: #fff;
     overflow: hidden;
     .sec1hot {
       .hothead {
@@ -173,6 +211,27 @@ export default {};
         padding: 0 10px 0 34px;
         border-bottom: 2px solid #C10D0C;
         display: block;
+        .tit {
+          padding: 3px 0;
+          float: left;
+          font-size: 20px;
+          font-weight: normal;
+          line-height: 28px;
+          cursor: pointer;
+          color: #333;
+        }
+        .tab {
+          float: left;
+          padding: 9px 20px;
+        }
+        .more {
+          float: right;
+          padding: 9px 30px;
+        }
+        li {
+          float: left;
+          padding: 9px 20px;
+        }
       }
       .card {
         position: relative;
@@ -188,12 +247,21 @@ export default {};
           height: 204px;
           padding-left: 42px;
           float: left;
-          background-color: dodgerblue;
+          background-color: #fff;
           a {
             background: url("../assets/cardpic.jpg");
             width: 140px;
             height: 140px;
             display: block;
+            position: relative;
+            span {
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              box-shadow: inset 0px 0px 20px 0px #c1b1b1;
+              width: 140px;
+              height: 27px;
+            }
           }
         }
       }
